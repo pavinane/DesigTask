@@ -69,6 +69,9 @@ const Left = () => (
                             btn1:"ux/ui",
                             btn2:"App design",
                             btn3:"sketch",
+                            worker:"13 designers worked",
+                            num:"+9",
+                            id:"num1"
                         }
                     ]}
                     />
@@ -81,6 +84,9 @@ const Left = () => (
                             btn1:"illustration",
                             btn2:"procreate",
                             btn3:"creative",
+                            worker:"7 designers worked",
+                            num:"+3",
+                            id:"num2"
                         }
                     ]}
                     />
@@ -93,6 +99,9 @@ const Left = () => (
                             btn1:"texture",
                             btn2:"photoshop",
                             btn3:"ux/ui",
+                            worker:"8 designers worked",
+                            num:"+4",
+                            id:"num3"
                            
                         }
                     ]}
@@ -103,6 +112,7 @@ const Left = () => (
                             image:portfolio,
                             name:"news app ui design",
                             time:"10:00Am-5:00pm",
+                            
                         }
                     ]}
                     />
@@ -138,28 +148,22 @@ const Card = ({ card }) => (
                         <button type="button">{cd.btn3}</button>
                     </div>
                 </div>
+                <div className="workers-card">
+                    <div className="workers-card-1">
+                   
+                            <img id="worker1" src={avatar} alt=""/>
+                            <img id="worker2"src={avatar} alt=""/>
+                            <img  id="worker3"src={avatar} alt=""/>
+                            <img  id="worker4"src={avatar} alt=""/>
+                        
+                      
+                        <h1 id={cd.id}>{cd.num}</h1>
+                    </div>
+                     <h2>{cd.worker}</h2>
+                </div>
             </div>
         </div>
       ))}
     </div>
   );
 
-//   <div className="activity-card">
-//   <div className="activity-card-1">
-//       <img src={portfolio} alt=""/>
-//       <div className="card-1-section">
-//           <div className="section-1">
-//               <div className="name">
-//                   <h1>news app ui design</h1>
-//                   <span>10:00Am-5:00pm</span>
-//               </div>
-//               <i id="plus" class="fas fa-plus"></i>
-//           </div>
-//          <div className="activity-buttons">
-//              <button type="button">ux/ui</button>
-//              <button type="button"> app design</button>
-//              <button type="button">sketch</button>
-//          </div>
-//       </div>
-//   </div>
-// </div>
