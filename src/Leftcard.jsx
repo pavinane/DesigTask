@@ -185,7 +185,7 @@ const Card = ({ card }) => (
                             <img  id="worker4"src={cd.wrk4} alt=""/>
                         
                       
-                        <h1 id={cd.id}>{cd.num}</h1>
+                        <h1 id={cd.id} ><span>{cd.num}</span></h1>
                     </div>
                      <h2>{cd.worker}</h2>
                 </div>
