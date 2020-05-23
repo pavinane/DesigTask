@@ -91,8 +91,7 @@
   display: grid;
   grid-template-rows: 150px 1fr;
   grid-gap: 20px;
-    height: 500px;
-    margin: 0 60px;
+    margin: -20px 60px;
     .design-head{
         h1{
             font-size: 18px;
@@ -197,7 +196,7 @@
                         padding: 10px 0;
                     }
                     .skill{
-                   border: 1px solid gray;
+                   border: 1px solid rgb(216, 204, 204);
                         height:4px;
                         border-radius: 10px;
                         box-sizing: border-box;
@@ -226,6 +225,8 @@
 }
 
 .screenshot-activity{
+    display: grid;
+    grid-gap: 20px;
     .activity-head{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -286,4 +287,98 @@
             }
         }               
     }
+   
+}
+
+.section-card{
+    // border: 1px solid red;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-gap: 20px;
+    overflow: hidden;
+    width: 1000px;
+    height: 417px;
+}
+.screenshot-card{
+
+.activity-card{
+    
+
+    .activity-card-1{
+        // border: 1px solid black;
+        box-shadow: 1px 1px 3px 0px;
+        display: grid;
+        grid-template-rows: 205px 150px 50px;
+        grid-gap: 5px;
+        img{
+            width: 100%;
+            height: 205px;
+        }
+        .card-1-section{
+            width: 260px;
+            margin: 0px auto;
+            border-bottom: 1px dashed rgba(112, 109, 109, 0.5);
+            display: grid;
+         grid-template-rows: 1fr 1fr;
+        //  grid-gap: 10px;
+          
+            .section-1{
+                display: grid;
+                grid-template-columns: 1fr 50px;
+                // justify-items: center;
+                .name{
+                
+                    h1{
+                        font-size: 16px;
+                        text-transform: capitalize;
+                        font-weight: bold;
+                        font-family: sans-serif;
+                        margin: 10px 0;
+                        color: rgb(26, 26, 26);
+                    } 
+                    span{
+                        font-size: 15px;
+                        color: gray;
+                    }
+                }
+                    #plus{
+                        background-color: #ffffff;
+                        border-radius: 100%;
+                        width: 30px;
+                        height: 30px;
+                        color: rgb(148, 144, 144);
+                        box-shadow: 1px 1px 1px 0px;
+                
+                    }
+                    .fa-plus:before {
+                        // content: "\f061";
+                        position: relative;
+                        top: 8px;
+                        left:8px;
+                    
+                    }
+            
+        }
+           
+
+        }
+    }
+}
+}
+.activity-buttons{
+  align-self: center;
+//   margin: 0 18px;
+    button{
+        margin: 0 5px;
+        height: 25px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(201, 186, 186, 0.274);
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-size: 10px;
+        color: rgba(73, 73, 73, 0.637);
+        font-weight: bold;
+    }
+   
 }

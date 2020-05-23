@@ -1,5 +1,8 @@
 import React from 'react';
 import avatar from './Image/avatar.png';
+import portfolio from './Image/portfolio.png';
+import illu from './Image/illu.png';
+import web from './Image/web.png'
 
 const Left = () => (
     <div className="left-card">
@@ -56,6 +59,56 @@ const Left = () => (
                         <button type="button">Today <i class="fas fa-sort-down"/></button>
                         </div>
                     </div>
+                    <div className="section-card">
+                    <Card
+                    card={[
+                        {
+                            image:portfolio,
+                            name:"news app ui design",
+                            time:"10:00Am-5:00pm",
+                            btn1:"ux/ui",
+                            btn2:"App design",
+                            btn3:"sketch",
+                        }
+                    ]}
+                    />
+                    <Card
+                    card={[
+                        {
+                            image:illu,
+                            name:"house illustration",
+                            time:"9:00Am-10:00pm",
+                            btn1:"illustration",
+                            btn2:"procreate",
+                            btn3:"creative",
+                        }
+                    ]}
+                    />
+                    <Card
+                    card={[
+                        {
+                            image:web,
+                            name:"texture for web",
+                            time:"5:00Am-9:00pm",
+                            btn1:"texture",
+                            btn2:"photoshop",
+                            btn3:"ux/ui",
+                           
+                        }
+                    ]}
+                    />
+                    <Card
+                    card={[
+                        {
+                            image:portfolio,
+                            name:"news app ui design",
+                            time:"10:00Am-5:00pm",
+                        }
+                    ]}
+                    />
+                    </div>
+                   
+                   
                 </div>
             </div>
         </div>
@@ -63,3 +116,50 @@ const Left = () => (
     </div>
 )
 export default Left;
+
+
+const Card = ({ card }) => (
+    <div className="screenshot-card">
+      {card.map(cd => (
+        <div className="activity-card">
+           <div className="activity-card-1">
+                <img src={cd.image} alt=""/>
+                <div className="card-1-section">
+                    <div className="section-1">
+                        <div className="name">
+                        <h1>{cd.name}</h1>
+                        <span>{cd.time}</span>
+                        </div>
+                        <i id="plus" class="fas fa-plus"></i>
+                    </div>
+                    <div className="activity-buttons">
+                        <button type="button">{cd.btn1}</button>
+                        <button type="button"> {cd.btn2}</button>
+                        <button type="button">{cd.btn3}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      ))}
+    </div>
+  );
+
+//   <div className="activity-card">
+//   <div className="activity-card-1">
+//       <img src={portfolio} alt=""/>
+//       <div className="card-1-section">
+//           <div className="section-1">
+//               <div className="name">
+//                   <h1>news app ui design</h1>
+//                   <span>10:00Am-5:00pm</span>
+//               </div>
+//               <i id="plus" class="fas fa-plus"></i>
+//           </div>
+//          <div className="activity-buttons">
+//              <button type="button">ux/ui</button>
+//              <button type="button"> app design</button>
+//              <button type="button">sketch</button>
+//          </div>
+//       </div>
+//   </div>
+// </div>
