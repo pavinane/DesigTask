@@ -2,7 +2,21 @@ import React from 'react';
 import avatar from './Image/avatar.png';
 import portfolio from './Image/portfolio.png';
 import illu from './Image/illu.png';
-import web from './Image/web.png'
+import web from './Image/web.png';
+import worker from './Image/worker.png';
+import worker1 from './Image/worker1.png';
+import worker2 from './Image/worker2.png';
+import worker3 from './Image/worker3.png';
+import worker4 from './Image/worker4.png';
+import worker5 from './Image/worker5.png';
+import worker6 from './Image/worker6.png';
+import worker7 from './Image/worker7.png';
+import worker8 from './Image/worker8.png';
+import worker9 from './Image/worker9.png';
+import worker10 from './Image/worker10.png';
+import worker11 from './Image/worker11.png';
+import worker12 from './Image/worker12.png';
+
 
 const Left = () => (
     <div className="left-card">
@@ -70,6 +84,10 @@ const Left = () => (
                             btn2:"App design",
                             btn3:"sketch",
                             worker:"13 designers worked",
+                            wrk1:worker,
+                            wrk2:worker1,
+                            wrk3:worker2,
+                            wrk4:worker3,
                             num:"+9",
                             id:"num1"
                         }
@@ -85,6 +103,10 @@ const Left = () => (
                             btn2:"procreate",
                             btn3:"creative",
                             worker:"7 designers worked",
+                            wrk1:worker4,
+                            wrk2:worker5,
+                            wrk3:worker6,
+                            wrk4:worker7,
                             num:"+3",
                             id:"num2"
                         }
@@ -101,7 +123,11 @@ const Left = () => (
                             btn3:"ux/ui",
                             worker:"8 designers worked",
                             num:"+4",
-                            id:"num3"
+                            id:"num3",
+                            wrk1:worker8,
+                            wrk2:worker9,
+                            wrk3:worker10,
+                            wrk4:worker11,
                            
                         }
                     ]}
@@ -112,6 +138,7 @@ const Left = () => (
                             image:portfolio,
                             name:"news app ui design",
                             time:"10:00Am-5:00pm",
+                            wrk1:worker12,
                             
                         }
                     ]}
@@ -151,10 +178,10 @@ const Card = ({ card }) => (
                 <div className="workers-card">
                     <div className="workers-card-1">
                    
-                            <img id="worker1" src={avatar} alt=""/>
-                            <img id="worker2"src={avatar} alt=""/>
-                            <img  id="worker3"src={avatar} alt=""/>
-                            <img  id="worker4"src={avatar} alt=""/>
+                            <img id="worker1" src={cd.wrk1} alt=""/>
+                            <img id="worker2"src={cd.wrk2} alt=""/>
+                            <img  id="worker3"src={cd.wrk3} alt=""/>
+                            <img  id="worker4"src={cd.wrk4} alt=""/>
                         
                       
                         <h1 id={cd.id}>{cd.num}</h1>
