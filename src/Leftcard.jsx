@@ -49,7 +49,7 @@ const Left = () => (
                         <div className="head-card2">
                             <div id="hour-rate">
                             <h1>hourly rate</h1>
-                            <small>45 $per hour</small>
+                            <small>45$ per hour</small>
                             </div>
                             <i class="fas fa-minus-circle"></i>
                         </div>
@@ -139,6 +139,7 @@ const Left = () => (
                             name:"news app ui design",
                             time:"10:00Am-5:00pm",
                             wrk1:worker12,
+                            btn1:"App design",
                             
                         }
                     ]}

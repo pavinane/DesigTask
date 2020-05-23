@@ -90,8 +90,10 @@
     width: 1000px;
   display: grid;
   grid-template-rows: 150px 1fr;
-  grid-gap: 20px;
-    margin: -20px 60px;
+  grid-gap: 10px;
+    margin: 0 60px;
+    position: relative;
+    top: -40px;
     .design-head{
         h1{
             font-size: 18px;
@@ -102,7 +104,7 @@
         .head-card{
             display: grid;
             grid-template-columns: 350px 200px 1fr;
-            height: 100px;
+            height: 90px;
             background-color: #fff;
             border-radius:  5px;
             .head-card1{
@@ -204,7 +206,7 @@
                         .skill-level{
                             background-color: rgb(106, 245, 71);
                             width: 70%;
-                            height: 2px;
+                            height: 2.5px;
                             border-radius: 10px;
                         }
                     }
@@ -293,11 +295,11 @@
 .section-card{
     // border: 1px solid red;
     display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
-    grid-gap: 20px;
+    grid-template-columns: 280px 280px 280px 280px;
+    grid-gap: 40px;
     overflow: hidden;
     width: 1000px;
-    height: 417px;
+    height: 352px;
 }
 .screenshot-card{
 
@@ -308,17 +310,17 @@
         // border: 1px solid black;
         box-shadow: 1px 1px 3px 0px;
         display: grid;
-        grid-template-rows: 205px 150px 50px;
+        grid-template-rows: 170px 120px 50px;
         grid-gap: 5px;
         border-radius: 8px 6px;
         img{
             width: 100%;
-            height: 205px;
+            height: 170px;
             border-radius: 8px 7px 0px 0px;
 
         }
         .card-1-section{
-            width: 280px;
+            width: 260px;
             margin: 0px auto;
             border-bottom: 1px dashed rgba(112, 109, 109, 0.5);
             display: grid;
@@ -394,7 +396,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    width: 280px;
+    width: 260px;
+    margin: 0 auto;
     justify-items: end;
    .workers-card-1{
      
