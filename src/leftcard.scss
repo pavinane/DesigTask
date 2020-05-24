@@ -38,6 +38,7 @@
             position: relative;
             left: 100px;
             font-family: sans-serif;
+            
             button{
             text-transform: uppercase;
             font-size: 10px;
@@ -46,7 +47,7 @@
                border: none;
                color: rebeccapurple;
                font-size: 12px;
-               font-weight:600 ;
+               font-weight:bold ;
                border-radius: 5px;
                
             }
@@ -398,14 +399,14 @@
     align-items: center;
     width: 260px;
     margin: 0 auto;
-    justify-items: end;
+    justify-items: center;
    .workers-card-1{
      
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     // width: 280px;
-    justify-items: center;
+    justify-items: end;
 
      
        img{
